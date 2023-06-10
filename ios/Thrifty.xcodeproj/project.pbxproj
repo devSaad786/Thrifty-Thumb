@@ -14,6 +14,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-Thrifty-ThriftyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Thrifty-ThriftyTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9C318CC5397E4CA59B158B77 /* Product Sans Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFEC213C084F40B78F32F4B0 /* Product Sans Bold Italic.ttf */; };
+		BBB58B02377A4403AE2A64ED /* Product Sans Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC52B5C2D8A64C608C222FC8 /* Product Sans Bold.ttf */; };
+		EF31CAD8F1EB4E758702F1E0 /* Product Sans Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C5786826447E1873D9F0E /* Product Sans Italic.ttf */; };
+		EE66F36FAC434008BAC1EB2C /* Product Sans Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA541F3ED4491082C55840 /* Product Sans Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Thrifty/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Thrifty-ThriftyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thrifty-ThriftyTests.release.xcconfig"; path = "Target Support Files/Pods-Thrifty-ThriftyTests/Pods-Thrifty-ThriftyTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EFEC213C084F40B78F32F4B0 /* Product Sans Bold Italic.ttf */ = {isa = PBXFileReference; name = "Product Sans Bold Italic.ttf"; path = "../assets/fonts/Product Sans Bold Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC52B5C2D8A64C608C222FC8 /* Product Sans Bold.ttf */ = {isa = PBXFileReference; name = "Product Sans Bold.ttf"; path = "../assets/fonts/Product Sans Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1A9C5786826447E1873D9F0E /* Product Sans Italic.ttf */ = {isa = PBXFileReference; name = "Product Sans Italic.ttf"; path = "../assets/fonts/Product Sans Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3FEA541F3ED4491082C55840 /* Product Sans Regular.ttf */ = {isa = PBXFileReference; name = "Product Sans Regular.ttf"; path = "../assets/fonts/Product Sans Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				41A8378711D148899957397C /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +156,18 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		41A8378711D148899957397C /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				EFEC213C084F40B78F32F4B0 /* Product Sans Bold Italic.ttf */,
+				AC52B5C2D8A64C608C222FC8 /* Product Sans Bold.ttf */,
+				1A9C5786826447E1873D9F0E /* Product Sans Italic.ttf */,
+				3FEA541F3ED4491082C55840 /* Product Sans Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +265,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				9C318CC5397E4CA59B158B77 /* Product Sans Bold Italic.ttf in Resources */,
+				BBB58B02377A4403AE2A64ED /* Product Sans Bold.ttf in Resources */,
+				EF31CAD8F1EB4E758702F1E0 /* Product Sans Italic.ttf in Resources */,
+				EE66F36FAC434008BAC1EB2C /* Product Sans Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
