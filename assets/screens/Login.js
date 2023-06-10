@@ -23,7 +23,6 @@ const Login = () => {
               style={styles.TextInput}
               placeholder="Email."
               placeholderTextColor="#003f5c"
-              onChangeText={email => setEmail(email)}
             />
           </View>
           <View style={styles.inputView}>
@@ -32,16 +31,15 @@ const Login = () => {
               placeholder="Password."
               placeholderTextColor="#003f5c"
               secureTextEntry={true}
-              onChangeText={password => setPassword(password)}
             />
           </View>
           <View style={styles.center}>
-          <TouchableOpacity>
-            <Text style={styles.forgot_button}>Forgot Password?</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text style={styles.forgot_button}>Create Account</Text>
-          </TouchableOpacity>
+            <TouchableOpacity>
+              <Text style={styles.forgot_button}>Forgot Password?</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Text style={styles.forgot_button}>Create Account</Text>
+            </TouchableOpacity>
           </View>
           <TouchableOpacity style={styles.loginBtn}>
             <Text style={styles.loginText}>LOGIN</Text>
@@ -77,10 +75,11 @@ const styles = StyleSheet.create({
     width: Dimensions.get('screen').width * 0.7,
     padding: 10,
     marginLeft: 20,
+    fontFamily: 'Product Sans Bold'
   },
   forgot_button: {
     height: 30,
-    textDecorationLine: 'underline'
+    textDecorationLine: 'underline',
   },
   loginBtn: {
     width: '80%',
@@ -89,15 +88,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 40,
-    fontFamily: 'Product Sans Bold',
-    fontWeight: '900',
     backgroundColor: '#5F6587',
   },
-  center:{
-    width: Dimensions.get('screen').width*0.7 ,
+  loginText:{
+    fontFamily: 'Product Sans Bold',
+    color: 'white'
+  },
+  center: {
+    width: Dimensions.get('screen').width * 0.7,
     display: 'flex',
     justifyContent: 'space-between',
     flexDirection: 'row',
-    alignItems:'center'
-  }
+    alignItems: 'center',
+  },
 });

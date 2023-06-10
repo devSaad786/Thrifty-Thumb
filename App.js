@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import Login from './assets/screens/Login'
+import Regiter from './assets/screens/Regiter'
 
 const App = () => {
   return (
-    <Login/>
+    <Regiter/>
   )
 }
 
