@@ -6,7 +6,8 @@ import {
   StatusBar,
   TextInput,
   TouchableOpacity,
-  Image
+  Image,
+  Dimensions,
 } from 'react-native';
 import React from 'react';
 
@@ -34,9 +35,14 @@ const Login = () => {
               onChangeText={password => setPassword(password)}
             />
           </View>
+          <View style={styles.center}>
           <TouchableOpacity>
             <Text style={styles.forgot_button}>Forgot Password?</Text>
           </TouchableOpacity>
+          <TouchableOpacity>
+            <Text style={styles.forgot_button}>Create Account</Text>
+          </TouchableOpacity>
+          </View>
           <TouchableOpacity style={styles.loginBtn}>
             <Text style={styles.loginText}>LOGIN</Text>
           </TouchableOpacity>
@@ -61,20 +67,20 @@ const styles = StyleSheet.create({
   inputView: {
     backgroundColor: '#FFC0CB',
     borderRadius: 30,
-    width: '70%',
+    width: Dimensions.get('screen').width * 0.7,
     height: 45,
     marginBottom: 20,
     alignItems: 'center',
   },
   TextInput: {
     height: 50,
-    flex: 1,
+    width: Dimensions.get('screen').width * 0.7,
     padding: 10,
     marginLeft: 20,
   },
   forgot_button: {
     height: 30,
-    marginBottom: 30,
+    textDecorationLine: 'underline'
   },
   loginBtn: {
     width: '80%',
@@ -83,6 +89,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 40,
-    backgroundColor: '#FF1493',
+    fontFamily: 'Product Sans Bold',
+    fontWeight: '900',
+    backgroundColor: '#5F6587',
   },
+  center:{
+    width: Dimensions.get('screen').width*0.7 ,
+    display: 'flex',
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems:'center'
+  }
 });
