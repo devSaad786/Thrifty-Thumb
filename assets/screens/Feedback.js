@@ -48,6 +48,7 @@ export default Feedback;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    // backgroundColor:'#EED7D2'
   },
   firstSection: {
     marginTop: 13,
